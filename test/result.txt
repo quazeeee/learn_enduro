@@ -1,0 +1,40 @@
+user1@Poincare:/opt/app1/test$ ./run_all.sh 
+Check valid account with balance
+SENT pkt(1) is :
+T_ACCNUM	300
+T_DATE	    2000-12-29
+
+RTN pkt(1) is :
+T_ACCNUM	300
+T_DATE	    2000-12-29
+T_MESSAGE	Retruning balance 300.000000
+
+Check valid account with different from config branch
+SENT pkt(1) is :
+T_ACCNUM	200
+T_DATE	    1994-12-29
+
+RTN pkt(1) is :
+T_ACCNUM	200
+T_DATE	    1994-12-29
+T_MESSAGE	Account not supported
+
+Check valid account without balance
+SENT pkt(1) is :
+T_ACCNUM	101
+T_DATE	    1994-12-29
+
+RTN pkt(1) is :
+T_ACCNUM	101
+T_DATE	    1994-12-29
+T_MESSAGE	Retruning balance 0.000000
+
+Check invalid account
+SENT pkt(1) is :
+T_ACCNUM	500
+T_DATE	    1994-12-29
+
+RTN pkt(1) is :
+T_ACCNUM	500
+T_DATE	    1994-12-29
+T_MESSAGE	Account not supported

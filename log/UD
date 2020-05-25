@@ -6013,3 +6013,343 @@ N:NDRX:5:0454f044: 1065:7fe595c698c0:001:20200525:200022522:drx_ctxid_op:i/init.
 N:NDRX:5:0454f044: 1065:7fe595c698c0:001:20200525:200022522:drx_ctxid_op:i/init.c:0122:Returning context id=0
 N:NDRX:5:0454f044: 1065:7fe595c698c0:001:20200525:200022522:ndrx_tpterm :i/init.c:0695:_tpterm: ATMI library un-initialized
 N:NDRX:5:0454f044: 1065:7fe595c698c0:001:20200525:200022522:ndrx_tpterm :i/init.c:0699:_tpterm returns 0
+N:NDRX:4:00000000:    0:7fc57342a8c0:000:20200525:201404749:plugins_load:inbase.c:0221:No plugins defined by NDRX_PLUGINS env variable
+N:NDRX:5:00000000:    0:7fc57342a8c0:000:20200525:201404749:cconfig_load:config.c:0430:CC tag set to: []
+N:NDRX:5:00000000:    0:7fc57342a8c0:000:20200525:201404749:x_inicfg_new:inicfg.c:0115:_ndrx_inicfg_new: load_global_env: 1
+N:NDRX:5:00000000:    0:7fc57342a8c0:000:20200525:201404749:ig_load_pass:config.c:0322:have config at slot [0] [/opt/app1/conf]
+N:NDRX:5:00000000:    0:7fc57342a8c0:000:20200525:201404749:ig_load_pass:config.c:0397:_ndrx_cconfig_load_pass: ret: 0 is_internal: 1 G_tried_to_load: 1
+N:NDRX:5:00000000:    0:7fc57342a8c0:000:20200525:201404749:x_inicfg_new:inicfg.c:0115:_ndrx_inicfg_new: load_global_env: 1
+N:NDRX:5:00000000:    0:7fc57342a8c0:000:20200525:201404749:ig_load_pass:config.c:0322:have config at slot [0] [/opt/app1/conf]
+N:NDRX:5:00000000:    0:7fc57342a8c0:000:20200525:201404749:ig_load_pass:config.c:0397:_ndrx_cconfig_load_pass: ret: 0 is_internal: 1 G_tried_to_load: 1
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404749:systest_init:s_test.c:0090:sys_test off
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404750:ndrx_tpalloc:ed_buf.c:0246:ndrx_tpalloc: type=UBF, subtype=NULL len=64944
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404750:ndrx_tpalloc:ed_buf.c:0288:ndrx_tpalloc: type=UBF subtype=NULL len=64944 allocated=0x55e304357df0
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404751:d_common_env:i/init.c:0216:Max servers set to 10000
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404751:d_common_env:i/init.c:0232:Max services set to 10000
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404751:d_common_env:i/init.c:0246:Max services set to 20000
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404751:d_common_env:i/init.c:0261:Random key set to: [0myWI5nu]
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404751:d_common_env:i/init.c:0277:Posix queue msg_max set to: [100]
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404751:d_common_env:i/init.c:0293:Posix queue msgsize_max set to: [56000]
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404751:d_common_env:i/init.c:0315:Posix queue prefix set to: [/app1], match string: [/app1,] (len: 6)
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404751:d_common_env:i/init.c:0332:Posix queue queue path set to: [/dev/mqueue]
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404751:d_common_env:i/init.c:0353:SystemV SEM IPC Key set to: [44000]
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404751:d_common_env:i/init.c:0360:Using comms timeout: 90
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404751:d_common_env:i/init.c:0377:Cluster node id=1
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404751:d_common_env:i/init.c:0395:NDRX_LDBAL set to 0
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404751:d_common_env:i/init.c:0405:[NDRX_CLUSTERISED] says: We run in cluster mode
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404751:d_common_env:i/init.c:0421:`ndrxd' pid file set to: [/opt/app1/tmp/ndrxd.pid]
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404751:d_common_env:i/init.c:0437:ndrxd normal wait set to: 60 attempts
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404751:d_common_env:i/init.c:0472:[NDRX_XA_CLOSE_STR]: XA Close String defaulted to: []
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404751:d_common_env:i/init.c:0514:[NDRX_XA_LAZY_INIT]: Lazy XA Init: FALSE
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404751:d_common_env:i/init.c:0580:[NDRX_NRSEMS]: Number of services shared memory semaphores set to: 30 (used only for poll() mode) (default: 30)
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404751:d_common_env:i/init.c:0601:[NDRX_MAXSVCSRVS]: Max number of local servers per service set to: 30 (used only for poll() mode) (default: 30)
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404751:d_common_env:i/init.c:0612:env loaded ok
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404751:tpinit      :i/init.c:0935:Got prefix [/app1]
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404751:tpinit      :i/init.c:0943:Got PROGNAME [ud]
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404751:drx_ctxid_op:i/init.c:0112:Got free context id=0 (0 base)
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:000:20200525:201404751:drx_ctxid_op:i/init.c:0122:Returning context id=1
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:tpinit      :i/init.c:0974:my_id=[clt,ud,1617,1,1]
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:tpinit      :i/init.c:0984:About to open client queue [/app1,clt,reply,ud,1617,1]
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:tpinit      :i/init.c:0986:After client Q open: 4
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:tpinit      :i/init.c:0995:Client queue [/app1,clt,reply,ud,1617,1] opened mqd_t=4.
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:nternal_init:i/init.c:0802:NDRXD queue: [/app1,sys,bg,ndrxd]
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:rxd_sem_init:mi/sem.c:0086:Using service semaphore key: [278528]
+N:NDRX:4:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:drx_sem_open:td_sem.c:0264:Semaphore exists [44000] - attaching
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:x_sem_attach:td_sem.c:0351:enter
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:x_sem_attach:td_sem.c:0371:sem: [32768] attached
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:x_sem_attach:td_sem.c:0375:return 0
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:drx_shm_init:mi/shm.c:0113:G_srvinfo.size = 12440000 (1244 * 10000)
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:drx_shm_init:mi/shm.c:0117:G_svcinfo.size = 7520000 (376 * 20000)
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:drx_shm_init:mi/shm.c:0121:G_brinfo.size = 7520000 (4 * 32)
+N:NDRX:4:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:drx_shm_open:_shmsv.c:0148:Shared memory exists [/app1,shm,svcinfo]/44001 - attaching
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:x_shm_attach:_shmsv.c:0222:Shm: [/app1,shm,svcinfo] 65538/44001 attach size: 7520000 mem: 0x7fc57198b000
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:x_shm_attach:_shmsv.c:0234:return 0
+N:NDRX:4:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:drx_shm_open:_shmsv.c:0148:Shared memory exists [/app1,shm,brinfo]/44002 - attaching
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:x_shm_attach:_shmsv.c:0222:Shm: [/app1,shm,brinfo] 98307/44002 attach size: 128 mem: 0x7fc57343e000
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:x_shm_attach:_shmsv.c:0234:return 0
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:ndrx_tpcall :tpcall.c:0997:ndrx_tpcall: enter
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:ndrx_tpacall:tpcall.c:0418:ndrx_tpacall enter
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:_shm_get_svc:mi/shm.c:0686:Key for [ROUTE] is 12180, shm is: 0x7fc57198b000
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:_shm_get_svc:mi/shm.c:0755:ndrx_shm_get_svc [ROUTE] - result: 1, iterations: 0, pos: 12180, install: 0
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:_shm_get_svc:mi/shm.c:0329:use_cluster=0 srvs=2 csrvs=0
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:_shm_get_svc:mi/shm.c:0367:use_cluster=0 srvs=2 csrvs=0
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:_shm_get_svc:mi/shm.c:0519:ndrx_shm_get_svc returns 0
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:tor_and_lock:tpcall.c:0311:Got free call descriptor 16382, callseq: 1
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:tor_and_lock:tpcall.c:0314:cd 16382 locked to 1590426844 timestamp (id: 163821590426844) callseq: 1
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:ndrx_tpacall:tpcall.c:0623:Sending request to: [/app1,svc,ROUTE] my_id=[clt,ud,1617,1,1] reply_to=[/app1,clt,reply,ud,1617,1] cd=16382 callseq=1 (user1=0, user2=0, user3=0, user4=0)
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:ric_q_send_2:iutils.c:0323:ndrx_generic_q_send_2: 620
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:ndrx_tpacall:tpcall.c:0652:ndrx_tpacall return 16382
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:rx_tpgetrply:tpcall.c:0685:ndrx_tpgetrply enter, flags 0 pbuf 0x55e3043aae10 cd_exp 16382
+N:NDRX:4:0454f044: 1617:7fc57342a8c0:001:20200525:201404751:rx_tpgetrply:tpcall.c:0734:Waiting on OS Q mqd_t=4...
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404754:ic_q_receive:iutils.c:0466:ndrx_generic_q_receive: 656
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404754:rx_tpgetrply:tpcall.c:0803:accept any: no, cd=16382 (name: [], my_id: []) atmi_tls=0x7fc5733a7010 cmd=2 rplybuf=0x55e3043aae10 rply_len=656
+N:NDRX:4:0454f044: 1617:7fc57342a8c0:001:20200525:201404754:rx_tpgetrply:tpcall.c:0826:Reply cd: 16382, timestamp :1590426844 callseq: 1 from /app1,clt,reply,ud,1617,1 type_id: 0 (UBF) - expected OK!
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404754:are_incoming:ed_ubf.c:0119:Entering UBF_prepare_incoming
+N:NDRX:4:0454f044: 1617:7fc57342a8c0:001:20200525:201404754:are_incoming:ed_ubf.c:0159:User buffer 3 is different, free it up and re-allocate as UBF
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404754:ndrx_tpfree :ed_buf.c:0383:_tpfree buf=(nil)
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404754:are_incoming:ed_ubf.c:0208:UBF_prepare_incoming: Incoming buffer where missing - allocating new (size: 116)!
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404754:ndrx_tpalloc:ed_buf.c:0246:ndrx_tpalloc: type=NULL, subtype=NULL len=116
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404754:ndrx_tpalloc:ed_buf.c:0288:ndrx_tpalloc: type=UBF subtype=NULL len=1024 allocated=0x55e304352330
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404754:rx_tpgetrply:tpcall.c:0949:ndrx_tpgetrply return 0 tpurcode=0 tperror=0
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404754:ndrx_tpcall :tpcall.c:1076:ndrx_tpcall: return 0 cd 16382
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404754:ndrx_tpterm :i/init.c:0629:_tpterm called
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404754:ndrx_tpterm :i/init.c:0674:Unlinking [/app1,clt,reply,ud,1617,1]
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404754:drx_ctxid_op:i/init.c:0103:Marking context 1 as free
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404754:drx_ctxid_op:i/init.c:0122:Returning context id=0
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404754:ndrx_tpterm :i/init.c:0695:_tpterm: ATMI library un-initialized
+N:NDRX:5:0454f044: 1617:7fc57342a8c0:001:20200525:201404754:ndrx_tpterm :i/init.c:0699:_tpterm returns 0
+N:NDRX:4:00000000:    0:7f824c2da8c0:000:20200525:201404756:plugins_load:inbase.c:0221:No plugins defined by NDRX_PLUGINS env variable
+N:NDRX:5:00000000:    0:7f824c2da8c0:000:20200525:201404756:cconfig_load:config.c:0430:CC tag set to: []
+N:NDRX:5:00000000:    0:7f824c2da8c0:000:20200525:201404756:x_inicfg_new:inicfg.c:0115:_ndrx_inicfg_new: load_global_env: 1
+N:NDRX:5:00000000:    0:7f824c2da8c0:000:20200525:201404756:ig_load_pass:config.c:0322:have config at slot [0] [/opt/app1/conf]
+N:NDRX:5:00000000:    0:7f824c2da8c0:000:20200525:201404756:ig_load_pass:config.c:0397:_ndrx_cconfig_load_pass: ret: 0 is_internal: 1 G_tried_to_load: 1
+N:NDRX:5:00000000:    0:7f824c2da8c0:000:20200525:201404756:x_inicfg_new:inicfg.c:0115:_ndrx_inicfg_new: load_global_env: 1
+N:NDRX:5:00000000:    0:7f824c2da8c0:000:20200525:201404756:ig_load_pass:config.c:0322:have config at slot [0] [/opt/app1/conf]
+N:NDRX:5:00000000:    0:7f824c2da8c0:000:20200525:201404757:ig_load_pass:config.c:0397:_ndrx_cconfig_load_pass: ret: 0 is_internal: 1 G_tried_to_load: 1
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404757:systest_init:s_test.c:0090:sys_test off
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404757:ndrx_tpalloc:ed_buf.c:0246:ndrx_tpalloc: type=UBF, subtype=NULL len=64944
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404757:ndrx_tpalloc:ed_buf.c:0288:ndrx_tpalloc: type=UBF subtype=NULL len=64944 allocated=0x55ac759d3df0
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404758:d_common_env:i/init.c:0216:Max servers set to 10000
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404758:d_common_env:i/init.c:0232:Max services set to 10000
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404758:d_common_env:i/init.c:0246:Max services set to 20000
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404758:d_common_env:i/init.c:0261:Random key set to: [0myWI5nu]
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404758:d_common_env:i/init.c:0277:Posix queue msg_max set to: [100]
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404758:d_common_env:i/init.c:0293:Posix queue msgsize_max set to: [56000]
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404758:d_common_env:i/init.c:0315:Posix queue prefix set to: [/app1], match string: [/app1,] (len: 6)
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404758:d_common_env:i/init.c:0332:Posix queue queue path set to: [/dev/mqueue]
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404758:d_common_env:i/init.c:0353:SystemV SEM IPC Key set to: [44000]
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404758:d_common_env:i/init.c:0360:Using comms timeout: 90
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404758:d_common_env:i/init.c:0377:Cluster node id=1
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404758:d_common_env:i/init.c:0395:NDRX_LDBAL set to 0
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404758:d_common_env:i/init.c:0405:[NDRX_CLUSTERISED] says: We run in cluster mode
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404758:d_common_env:i/init.c:0421:`ndrxd' pid file set to: [/opt/app1/tmp/ndrxd.pid]
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404758:d_common_env:i/init.c:0437:ndrxd normal wait set to: 60 attempts
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404758:d_common_env:i/init.c:0472:[NDRX_XA_CLOSE_STR]: XA Close String defaulted to: []
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404758:d_common_env:i/init.c:0514:[NDRX_XA_LAZY_INIT]: Lazy XA Init: FALSE
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404758:d_common_env:i/init.c:0580:[NDRX_NRSEMS]: Number of services shared memory semaphores set to: 30 (used only for poll() mode) (default: 30)
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404759:d_common_env:i/init.c:0601:[NDRX_MAXSVCSRVS]: Max number of local servers per service set to: 30 (used only for poll() mode) (default: 30)
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404759:d_common_env:i/init.c:0612:env loaded ok
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404759:tpinit      :i/init.c:0935:Got prefix [/app1]
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404759:tpinit      :i/init.c:0943:Got PROGNAME [ud]
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404759:drx_ctxid_op:i/init.c:0112:Got free context id=0 (0 base)
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:000:20200525:201404759:drx_ctxid_op:i/init.c:0122:Returning context id=1
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:tpinit      :i/init.c:0974:my_id=[clt,ud,1618,1,1]
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:tpinit      :i/init.c:0984:About to open client queue [/app1,clt,reply,ud,1618,1]
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:tpinit      :i/init.c:0986:After client Q open: 4
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:tpinit      :i/init.c:0995:Client queue [/app1,clt,reply,ud,1618,1] opened mqd_t=4.
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:nternal_init:i/init.c:0802:NDRXD queue: [/app1,sys,bg,ndrxd]
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:rxd_sem_init:mi/sem.c:0086:Using service semaphore key: [278528]
+N:NDRX:4:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:drx_sem_open:td_sem.c:0264:Semaphore exists [44000] - attaching
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:x_sem_attach:td_sem.c:0351:enter
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:x_sem_attach:td_sem.c:0371:sem: [32768] attached
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:x_sem_attach:td_sem.c:0375:return 0
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:drx_shm_init:mi/shm.c:0113:G_srvinfo.size = 12440000 (1244 * 10000)
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:drx_shm_init:mi/shm.c:0117:G_svcinfo.size = 7520000 (376 * 20000)
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:drx_shm_init:mi/shm.c:0121:G_brinfo.size = 7520000 (4 * 32)
+N:NDRX:4:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:drx_shm_open:_shmsv.c:0148:Shared memory exists [/app1,shm,svcinfo]/44001 - attaching
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:x_shm_attach:_shmsv.c:0222:Shm: [/app1,shm,svcinfo] 65538/44001 attach size: 7520000 mem: 0x7f824a83b000
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:x_shm_attach:_shmsv.c:0234:return 0
+N:NDRX:4:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:drx_shm_open:_shmsv.c:0148:Shared memory exists [/app1,shm,brinfo]/44002 - attaching
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:x_shm_attach:_shmsv.c:0222:Shm: [/app1,shm,brinfo] 98307/44002 attach size: 128 mem: 0x7f824c2ee000
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:x_shm_attach:_shmsv.c:0234:return 0
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:ndrx_tpcall :tpcall.c:0997:ndrx_tpcall: enter
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:ndrx_tpacall:tpcall.c:0418:ndrx_tpacall enter
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:_shm_get_svc:mi/shm.c:0686:Key for [ROUTE] is 12180, shm is: 0x7f824a83b000
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:_shm_get_svc:mi/shm.c:0755:ndrx_shm_get_svc [ROUTE] - result: 1, iterations: 0, pos: 12180, install: 0
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:_shm_get_svc:mi/shm.c:0329:use_cluster=0 srvs=2 csrvs=0
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:_shm_get_svc:mi/shm.c:0367:use_cluster=0 srvs=2 csrvs=0
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:_shm_get_svc:mi/shm.c:0519:ndrx_shm_get_svc returns 0
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:tor_and_lock:tpcall.c:0311:Got free call descriptor 16382, callseq: 1
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:tor_and_lock:tpcall.c:0314:cd 16382 locked to 1590426844 timestamp (id: 163821590426844) callseq: 1
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:ndrx_tpacall:tpcall.c:0623:Sending request to: [/app1,svc,ROUTE] my_id=[clt,ud,1618,1,1] reply_to=[/app1,clt,reply,ud,1618,1] cd=16382 callseq=1 (user1=0, user2=0, user3=0, user4=0)
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:ric_q_send_2:iutils.c:0323:ndrx_generic_q_send_2: 620
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:ndrx_tpacall:tpcall.c:0652:ndrx_tpacall return 16382
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:rx_tpgetrply:tpcall.c:0685:ndrx_tpgetrply enter, flags 0 pbuf 0x55ac75a26e10 cd_exp 16382
+N:NDRX:4:0454f044: 1618:7f824c2da8c0:001:20200525:201404759:rx_tpgetrply:tpcall.c:0734:Waiting on OS Q mqd_t=4...
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404760:ic_q_receive:iutils.c:0466:ndrx_generic_q_receive: 648
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404760:rx_tpgetrply:tpcall.c:0803:accept any: no, cd=16382 (name: [], my_id: []) atmi_tls=0x7f824c257010 cmd=2 rplybuf=0x55ac75a26e10 rply_len=648
+N:NDRX:4:0454f044: 1618:7f824c2da8c0:001:20200525:201404760:rx_tpgetrply:tpcall.c:0826:Reply cd: 16382, timestamp :1590426844 callseq: 1 from /app1,clt,reply,ud,1618,1 type_id: 0 (UBF) - expected OK!
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404760:are_incoming:ed_ubf.c:0119:Entering UBF_prepare_incoming
+N:NDRX:4:0454f044: 1618:7f824c2da8c0:001:20200525:201404760:are_incoming:ed_ubf.c:0159:User buffer 3 is different, free it up and re-allocate as UBF
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404760:ndrx_tpfree :ed_buf.c:0383:_tpfree buf=(nil)
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404760:are_incoming:ed_ubf.c:0208:UBF_prepare_incoming: Incoming buffer where missing - allocating new (size: 108)!
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404760:ndrx_tpalloc:ed_buf.c:0246:ndrx_tpalloc: type=NULL, subtype=NULL len=108
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404760:ndrx_tpalloc:ed_buf.c:0288:ndrx_tpalloc: type=UBF subtype=NULL len=1024 allocated=0x55ac759ce330
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404760:rx_tpgetrply:tpcall.c:0949:ndrx_tpgetrply return 0 tpurcode=0 tperror=0
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404760:ndrx_tpcall :tpcall.c:1076:ndrx_tpcall: return 0 cd 16382
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404761:ndrx_tpterm :i/init.c:0629:_tpterm called
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404761:ndrx_tpterm :i/init.c:0674:Unlinking [/app1,clt,reply,ud,1618,1]
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404761:drx_ctxid_op:i/init.c:0103:Marking context 1 as free
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404761:drx_ctxid_op:i/init.c:0122:Returning context id=0
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404761:ndrx_tpterm :i/init.c:0695:_tpterm: ATMI library un-initialized
+N:NDRX:5:0454f044: 1618:7f824c2da8c0:001:20200525:201404761:ndrx_tpterm :i/init.c:0699:_tpterm returns 0
+N:NDRX:4:00000000:    0:7f11312c48c0:000:20200525:201404762:plugins_load:inbase.c:0221:No plugins defined by NDRX_PLUGINS env variable
+N:NDRX:5:00000000:    0:7f11312c48c0:000:20200525:201404763:cconfig_load:config.c:0430:CC tag set to: []
+N:NDRX:5:00000000:    0:7f11312c48c0:000:20200525:201404763:x_inicfg_new:inicfg.c:0115:_ndrx_inicfg_new: load_global_env: 1
+N:NDRX:5:00000000:    0:7f11312c48c0:000:20200525:201404763:ig_load_pass:config.c:0322:have config at slot [0] [/opt/app1/conf]
+N:NDRX:5:00000000:    0:7f11312c48c0:000:20200525:201404763:ig_load_pass:config.c:0397:_ndrx_cconfig_load_pass: ret: 0 is_internal: 1 G_tried_to_load: 1
+N:NDRX:5:00000000:    0:7f11312c48c0:000:20200525:201404763:x_inicfg_new:inicfg.c:0115:_ndrx_inicfg_new: load_global_env: 1
+N:NDRX:5:00000000:    0:7f11312c48c0:000:20200525:201404763:ig_load_pass:config.c:0322:have config at slot [0] [/opt/app1/conf]
+N:NDRX:5:00000000:    0:7f11312c48c0:000:20200525:201404763:ig_load_pass:config.c:0397:_ndrx_cconfig_load_pass: ret: 0 is_internal: 1 G_tried_to_load: 1
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404763:systest_init:s_test.c:0090:sys_test off
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404763:ndrx_tpalloc:ed_buf.c:0246:ndrx_tpalloc: type=UBF, subtype=NULL len=64944
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404763:ndrx_tpalloc:ed_buf.c:0288:ndrx_tpalloc: type=UBF subtype=NULL len=64944 allocated=0x563284872df0
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404764:d_common_env:i/init.c:0216:Max servers set to 10000
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404764:d_common_env:i/init.c:0232:Max services set to 10000
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404764:d_common_env:i/init.c:0246:Max services set to 20000
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404764:d_common_env:i/init.c:0261:Random key set to: [0myWI5nu]
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404764:d_common_env:i/init.c:0277:Posix queue msg_max set to: [100]
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404764:d_common_env:i/init.c:0293:Posix queue msgsize_max set to: [56000]
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404764:d_common_env:i/init.c:0315:Posix queue prefix set to: [/app1], match string: [/app1,] (len: 6)
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404764:d_common_env:i/init.c:0332:Posix queue queue path set to: [/dev/mqueue]
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404764:d_common_env:i/init.c:0353:SystemV SEM IPC Key set to: [44000]
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404764:d_common_env:i/init.c:0360:Using comms timeout: 90
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404764:d_common_env:i/init.c:0377:Cluster node id=1
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404764:d_common_env:i/init.c:0395:NDRX_LDBAL set to 0
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404764:d_common_env:i/init.c:0405:[NDRX_CLUSTERISED] says: We run in cluster mode
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404764:d_common_env:i/init.c:0421:`ndrxd' pid file set to: [/opt/app1/tmp/ndrxd.pid]
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404764:d_common_env:i/init.c:0437:ndrxd normal wait set to: 60 attempts
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404764:d_common_env:i/init.c:0472:[NDRX_XA_CLOSE_STR]: XA Close String defaulted to: []
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404764:d_common_env:i/init.c:0514:[NDRX_XA_LAZY_INIT]: Lazy XA Init: FALSE
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404764:d_common_env:i/init.c:0580:[NDRX_NRSEMS]: Number of services shared memory semaphores set to: 30 (used only for poll() mode) (default: 30)
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404764:d_common_env:i/init.c:0601:[NDRX_MAXSVCSRVS]: Max number of local servers per service set to: 30 (used only for poll() mode) (default: 30)
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404764:d_common_env:i/init.c:0612:env loaded ok
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404764:tpinit      :i/init.c:0935:Got prefix [/app1]
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404764:tpinit      :i/init.c:0943:Got PROGNAME [ud]
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404764:drx_ctxid_op:i/init.c:0112:Got free context id=0 (0 base)
+N:NDRX:5:0454f044: 1619:7f11312c48c0:000:20200525:201404764:drx_ctxid_op:i/init.c:0122:Returning context id=1
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404764:tpinit      :i/init.c:0974:my_id=[clt,ud,1619,1,1]
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404764:tpinit      :i/init.c:0984:About to open client queue [/app1,clt,reply,ud,1619,1]
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404764:tpinit      :i/init.c:0986:After client Q open: 4
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404764:tpinit      :i/init.c:0995:Client queue [/app1,clt,reply,ud,1619,1] opened mqd_t=4.
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404764:nternal_init:i/init.c:0802:NDRXD queue: [/app1,sys,bg,ndrxd]
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404764:rxd_sem_init:mi/sem.c:0086:Using service semaphore key: [278528]
+N:NDRX:4:0454f044: 1619:7f11312c48c0:001:20200525:201404765:drx_sem_open:td_sem.c:0264:Semaphore exists [44000] - attaching
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404765:x_sem_attach:td_sem.c:0351:enter
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404765:x_sem_attach:td_sem.c:0371:sem: [32768] attached
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404765:x_sem_attach:td_sem.c:0375:return 0
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404765:drx_shm_init:mi/shm.c:0113:G_srvinfo.size = 12440000 (1244 * 10000)
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404765:drx_shm_init:mi/shm.c:0117:G_svcinfo.size = 7520000 (376 * 20000)
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404765:drx_shm_init:mi/shm.c:0121:G_brinfo.size = 7520000 (4 * 32)
+N:NDRX:4:0454f044: 1619:7f11312c48c0:001:20200525:201404765:drx_shm_open:_shmsv.c:0148:Shared memory exists [/app1,shm,svcinfo]/44001 - attaching
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404765:x_shm_attach:_shmsv.c:0222:Shm: [/app1,shm,svcinfo] 65538/44001 attach size: 7520000 mem: 0x7f112f825000
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404765:x_shm_attach:_shmsv.c:0234:return 0
+N:NDRX:4:0454f044: 1619:7f11312c48c0:001:20200525:201404765:drx_shm_open:_shmsv.c:0148:Shared memory exists [/app1,shm,brinfo]/44002 - attaching
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404765:x_shm_attach:_shmsv.c:0222:Shm: [/app1,shm,brinfo] 98307/44002 attach size: 128 mem: 0x7f11312d8000
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404765:x_shm_attach:_shmsv.c:0234:return 0
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404765:ndrx_tpcall :tpcall.c:0997:ndrx_tpcall: enter
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404765:ndrx_tpacall:tpcall.c:0418:ndrx_tpacall enter
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404765:_shm_get_svc:mi/shm.c:0686:Key for [ROUTE] is 12180, shm is: 0x7f112f825000
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404765:_shm_get_svc:mi/shm.c:0755:ndrx_shm_get_svc [ROUTE] - result: 1, iterations: 0, pos: 12180, install: 0
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404765:_shm_get_svc:mi/shm.c:0329:use_cluster=0 srvs=2 csrvs=0
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404765:_shm_get_svc:mi/shm.c:0367:use_cluster=0 srvs=2 csrvs=0
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404765:_shm_get_svc:mi/shm.c:0519:ndrx_shm_get_svc returns 0
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404765:tor_and_lock:tpcall.c:0311:Got free call descriptor 16382, callseq: 1
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404765:tor_and_lock:tpcall.c:0314:cd 16382 locked to 1590426844 timestamp (id: 163821590426844) callseq: 1
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404765:ndrx_tpacall:tpcall.c:0623:Sending request to: [/app1,svc,ROUTE] my_id=[clt,ud,1619,1,1] reply_to=[/app1,clt,reply,ud,1619,1] cd=16382 callseq=1 (user1=0, user2=0, user3=0, user4=0)
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404765:ric_q_send_2:iutils.c:0323:ndrx_generic_q_send_2: 620
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404765:ndrx_tpacall:tpcall.c:0652:ndrx_tpacall return 16382
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404765:rx_tpgetrply:tpcall.c:0685:ndrx_tpgetrply enter, flags 0 pbuf 0x5632848c5e10 cd_exp 16382
+N:NDRX:4:0454f044: 1619:7f11312c48c0:001:20200525:201404765:rx_tpgetrply:tpcall.c:0734:Waiting on OS Q mqd_t=4...
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404766:ic_q_receive:iutils.c:0466:ndrx_generic_q_receive: 656
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404766:rx_tpgetrply:tpcall.c:0803:accept any: no, cd=16382 (name: [], my_id: []) atmi_tls=0x7f1131241010 cmd=2 rplybuf=0x5632848c5e10 rply_len=656
+N:NDRX:4:0454f044: 1619:7f11312c48c0:001:20200525:201404766:rx_tpgetrply:tpcall.c:0826:Reply cd: 16382, timestamp :1590426844 callseq: 1 from /app1,clt,reply,ud,1619,1 type_id: 0 (UBF) - expected OK!
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404766:are_incoming:ed_ubf.c:0119:Entering UBF_prepare_incoming
+N:NDRX:4:0454f044: 1619:7f11312c48c0:001:20200525:201404766:are_incoming:ed_ubf.c:0159:User buffer 3 is different, free it up and re-allocate as UBF
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404766:ndrx_tpfree :ed_buf.c:0383:_tpfree buf=(nil)
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404766:are_incoming:ed_ubf.c:0208:UBF_prepare_incoming: Incoming buffer where missing - allocating new (size: 116)!
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404766:ndrx_tpalloc:ed_buf.c:0246:ndrx_tpalloc: type=NULL, subtype=NULL len=116
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404766:ndrx_tpalloc:ed_buf.c:0288:ndrx_tpalloc: type=UBF subtype=NULL len=1024 allocated=0x56328486d330
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404766:rx_tpgetrply:tpcall.c:0949:ndrx_tpgetrply return 0 tpurcode=0 tperror=0
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404766:ndrx_tpcall :tpcall.c:1076:ndrx_tpcall: return 0 cd 16382
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404767:ndrx_tpterm :i/init.c:0629:_tpterm called
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404767:ndrx_tpterm :i/init.c:0674:Unlinking [/app1,clt,reply,ud,1619,1]
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404767:drx_ctxid_op:i/init.c:0103:Marking context 1 as free
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404767:drx_ctxid_op:i/init.c:0122:Returning context id=0
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404767:ndrx_tpterm :i/init.c:0695:_tpterm: ATMI library un-initialized
+N:NDRX:5:0454f044: 1619:7f11312c48c0:001:20200525:201404767:ndrx_tpterm :i/init.c:0699:_tpterm returns 0
+N:NDRX:4:00000000:    0:7f5e21bf28c0:000:20200525:201404768:plugins_load:inbase.c:0221:No plugins defined by NDRX_PLUGINS env variable
+N:NDRX:5:00000000:    0:7f5e21bf28c0:000:20200525:201404768:cconfig_load:config.c:0430:CC tag set to: []
+N:NDRX:5:00000000:    0:7f5e21bf28c0:000:20200525:201404768:x_inicfg_new:inicfg.c:0115:_ndrx_inicfg_new: load_global_env: 1
+N:NDRX:5:00000000:    0:7f5e21bf28c0:000:20200525:201404768:ig_load_pass:config.c:0322:have config at slot [0] [/opt/app1/conf]
+N:NDRX:5:00000000:    0:7f5e21bf28c0:000:20200525:201404768:ig_load_pass:config.c:0397:_ndrx_cconfig_load_pass: ret: 0 is_internal: 1 G_tried_to_load: 1
+N:NDRX:5:00000000:    0:7f5e21bf28c0:000:20200525:201404768:x_inicfg_new:inicfg.c:0115:_ndrx_inicfg_new: load_global_env: 1
+N:NDRX:5:00000000:    0:7f5e21bf28c0:000:20200525:201404768:ig_load_pass:config.c:0322:have config at slot [0] [/opt/app1/conf]
+N:NDRX:5:00000000:    0:7f5e21bf28c0:000:20200525:201404769:ig_load_pass:config.c:0397:_ndrx_cconfig_load_pass: ret: 0 is_internal: 1 G_tried_to_load: 1
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404769:systest_init:s_test.c:0090:sys_test off
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404769:ndrx_tpalloc:ed_buf.c:0246:ndrx_tpalloc: type=UBF, subtype=NULL len=64944
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404769:ndrx_tpalloc:ed_buf.c:0288:ndrx_tpalloc: type=UBF subtype=NULL len=64944 allocated=0x55bfdb286df0
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404769:d_common_env:i/init.c:0216:Max servers set to 10000
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404769:d_common_env:i/init.c:0232:Max services set to 10000
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404769:d_common_env:i/init.c:0246:Max services set to 20000
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404769:d_common_env:i/init.c:0261:Random key set to: [0myWI5nu]
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404769:d_common_env:i/init.c:0277:Posix queue msg_max set to: [100]
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404769:d_common_env:i/init.c:0293:Posix queue msgsize_max set to: [56000]
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404769:d_common_env:i/init.c:0315:Posix queue prefix set to: [/app1], match string: [/app1,] (len: 6)
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404769:d_common_env:i/init.c:0332:Posix queue queue path set to: [/dev/mqueue]
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404769:d_common_env:i/init.c:0353:SystemV SEM IPC Key set to: [44000]
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404769:d_common_env:i/init.c:0360:Using comms timeout: 90
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404769:d_common_env:i/init.c:0377:Cluster node id=1
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404769:d_common_env:i/init.c:0395:NDRX_LDBAL set to 0
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404769:d_common_env:i/init.c:0405:[NDRX_CLUSTERISED] says: We run in cluster mode
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404769:d_common_env:i/init.c:0421:`ndrxd' pid file set to: [/opt/app1/tmp/ndrxd.pid]
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404769:d_common_env:i/init.c:0437:ndrxd normal wait set to: 60 attempts
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404770:d_common_env:i/init.c:0472:[NDRX_XA_CLOSE_STR]: XA Close String defaulted to: []
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404770:d_common_env:i/init.c:0514:[NDRX_XA_LAZY_INIT]: Lazy XA Init: FALSE
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404770:d_common_env:i/init.c:0580:[NDRX_NRSEMS]: Number of services shared memory semaphores set to: 30 (used only for poll() mode) (default: 30)
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404770:d_common_env:i/init.c:0601:[NDRX_MAXSVCSRVS]: Max number of local servers per service set to: 30 (used only for poll() mode) (default: 30)
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404770:d_common_env:i/init.c:0612:env loaded ok
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404770:tpinit      :i/init.c:0935:Got prefix [/app1]
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404770:tpinit      :i/init.c:0943:Got PROGNAME [ud]
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404770:drx_ctxid_op:i/init.c:0112:Got free context id=0 (0 base)
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:000:20200525:201404770:drx_ctxid_op:i/init.c:0122:Returning context id=1
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:tpinit      :i/init.c:0974:my_id=[clt,ud,1620,1,1]
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:tpinit      :i/init.c:0984:About to open client queue [/app1,clt,reply,ud,1620,1]
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:tpinit      :i/init.c:0986:After client Q open: 4
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:tpinit      :i/init.c:0995:Client queue [/app1,clt,reply,ud,1620,1] opened mqd_t=4.
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:nternal_init:i/init.c:0802:NDRXD queue: [/app1,sys,bg,ndrxd]
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:rxd_sem_init:mi/sem.c:0086:Using service semaphore key: [278528]
+N:NDRX:4:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:drx_sem_open:td_sem.c:0264:Semaphore exists [44000] - attaching
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:x_sem_attach:td_sem.c:0351:enter
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:x_sem_attach:td_sem.c:0371:sem: [32768] attached
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:x_sem_attach:td_sem.c:0375:return 0
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:drx_shm_init:mi/shm.c:0113:G_srvinfo.size = 12440000 (1244 * 10000)
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:drx_shm_init:mi/shm.c:0117:G_svcinfo.size = 7520000 (376 * 20000)
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:drx_shm_init:mi/shm.c:0121:G_brinfo.size = 7520000 (4 * 32)
+N:NDRX:4:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:drx_shm_open:_shmsv.c:0148:Shared memory exists [/app1,shm,svcinfo]/44001 - attaching
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:x_shm_attach:_shmsv.c:0222:Shm: [/app1,shm,svcinfo] 65538/44001 attach size: 7520000 mem: 0x7f5e20153000
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:x_shm_attach:_shmsv.c:0234:return 0
+N:NDRX:4:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:drx_shm_open:_shmsv.c:0148:Shared memory exists [/app1,shm,brinfo]/44002 - attaching
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:x_shm_attach:_shmsv.c:0222:Shm: [/app1,shm,brinfo] 98307/44002 attach size: 128 mem: 0x7f5e21c06000
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:x_shm_attach:_shmsv.c:0234:return 0
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:ndrx_tpcall :tpcall.c:0997:ndrx_tpcall: enter
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:ndrx_tpacall:tpcall.c:0418:ndrx_tpacall enter
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:_shm_get_svc:mi/shm.c:0686:Key for [ROUTE] is 12180, shm is: 0x7f5e20153000
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:_shm_get_svc:mi/shm.c:0755:ndrx_shm_get_svc [ROUTE] - result: 1, iterations: 0, pos: 12180, install: 0
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:_shm_get_svc:mi/shm.c:0329:use_cluster=0 srvs=2 csrvs=0
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:_shm_get_svc:mi/shm.c:0367:use_cluster=0 srvs=2 csrvs=0
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:_shm_get_svc:mi/shm.c:0519:ndrx_shm_get_svc returns 0
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:tor_and_lock:tpcall.c:0311:Got free call descriptor 16382, callseq: 1
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:tor_and_lock:tpcall.c:0314:cd 16382 locked to 1590426844 timestamp (id: 163821590426844) callseq: 1
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:ndrx_tpacall:tpcall.c:0623:Sending request to: [/app1,svc,ROUTE] my_id=[clt,ud,1620,1,1] reply_to=[/app1,clt,reply,ud,1620,1] cd=16382 callseq=1 (user1=0, user2=0, user3=0, user4=0)
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:ric_q_send_2:iutils.c:0323:ndrx_generic_q_send_2: 620
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:ndrx_tpacall:tpcall.c:0652:ndrx_tpacall return 16382
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:rx_tpgetrply:tpcall.c:0685:ndrx_tpgetrply enter, flags 0 pbuf 0x55bfdb2d9e10 cd_exp 16382
+N:NDRX:4:0454f044: 1620:7f5e21bf28c0:001:20200525:201404770:rx_tpgetrply:tpcall.c:0734:Waiting on OS Q mqd_t=4...
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404771:ic_q_receive:iutils.c:0466:ndrx_generic_q_receive: 648
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404771:rx_tpgetrply:tpcall.c:0803:accept any: no, cd=16382 (name: [], my_id: []) atmi_tls=0x7f5e21b6f010 cmd=2 rplybuf=0x55bfdb2d9e10 rply_len=648
+N:NDRX:4:0454f044: 1620:7f5e21bf28c0:001:20200525:201404771:rx_tpgetrply:tpcall.c:0826:Reply cd: 16382, timestamp :1590426844 callseq: 1 from /app1,clt,reply,ud,1620,1 type_id: 0 (UBF) - expected OK!
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404771:are_incoming:ed_ubf.c:0119:Entering UBF_prepare_incoming
+N:NDRX:4:0454f044: 1620:7f5e21bf28c0:001:20200525:201404771:are_incoming:ed_ubf.c:0159:User buffer 3 is different, free it up and re-allocate as UBF
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404771:ndrx_tpfree :ed_buf.c:0383:_tpfree buf=(nil)
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404771:are_incoming:ed_ubf.c:0208:UBF_prepare_incoming: Incoming buffer where missing - allocating new (size: 108)!
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404771:ndrx_tpalloc:ed_buf.c:0246:ndrx_tpalloc: type=NULL, subtype=NULL len=108
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404771:ndrx_tpalloc:ed_buf.c:0288:ndrx_tpalloc: type=UBF subtype=NULL len=1024 allocated=0x55bfdb281330
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404771:rx_tpgetrply:tpcall.c:0949:ndrx_tpgetrply return 0 tpurcode=0 tperror=0
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404771:ndrx_tpcall :tpcall.c:1076:ndrx_tpcall: return 0 cd 16382
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404771:ndrx_tpterm :i/init.c:0629:_tpterm called
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404771:ndrx_tpterm :i/init.c:0674:Unlinking [/app1,clt,reply,ud,1620,1]
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404771:drx_ctxid_op:i/init.c:0103:Marking context 1 as free
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404771:drx_ctxid_op:i/init.c:0122:Returning context id=0
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404771:ndrx_tpterm :i/init.c:0695:_tpterm: ATMI library un-initialized
+N:NDRX:5:0454f044: 1620:7f5e21bf28c0:001:20200525:201404771:ndrx_tpterm :i/init.c:0699:_tpterm returns 0
