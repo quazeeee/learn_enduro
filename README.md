@@ -21,6 +21,7 @@ compiled binaries: https://github.com/quazeeee/learn_enduro/tree/master/bin
 
 postgres db:
 
+```
 mydb=# select * from account;
  account_number | currency | branch_code 
 ----------------+----------+-------------
@@ -30,7 +31,8 @@ mydb=# select * from account;
             200 | USD      | 5600
             101 | USD      | 5000
 (5 rows)
-
+```
+```
 mydb=# select * from balance;
  id | account_number |    data    | balance 
 ----+----------------+------------+---------
@@ -41,7 +43,8 @@ mydb=# select * from balance;
   5 |            400 | 2000-12-29 |     100
   6 |            300 | 2000-12-29 |     200
 (6 rows)
-
+```
+```
 mydb=# \d
                List of relations
  Schema |      Name      |   Type   |  Owner   
@@ -50,7 +53,8 @@ mydb=# \d
  public | balance        | table    | postgres
  public | balance_id_seq | sequence | postgres
 (3 rows)
-
+```
+```
 mydb=# \d account
                          Table "public.account"
      Column     |         Type         | Collation | Nullable | Default 
@@ -62,7 +66,8 @@ Indexes:
     "account_pkey" PRIMARY KEY, btree (account_number)
 Referenced by:
     TABLE "balance" CONSTRAINT "balance_account_number_fkey" FOREIGN KEY (account_number) REFERENCES account(account_number) ON DELETE CASCADE
-
+```
+```
 mydb=# \d balance
                                 Table "public.balance"
      Column     |  Type  | Collation | Nullable |               Default               
@@ -75,3 +80,4 @@ Indexes:
     "balance_pkey" PRIMARY KEY, btree (id)
 Foreign-key constraints:
     "balance_account_number_fkey" FOREIGN KEY (account_number) REFERENCES account(account_number) ON DELETE CASCADE
+```
