@@ -1,0 +1,163 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+
+#include <atmi.h>
+#include <ubf.h>
+#include <ndebug.h>
+#include <ndrstandard.h>
+#include <inicfg.h>
+#include <exhash.h>
+#include <nerror.h>
+#include <cconfig.h>
+#include <errno.h>
+
+/* Enduro/X includes: */
+#include <atmi.h>
+#include <ubf.h>
+#include <bank.fd.h>
+
+#define SUCCEED         0
+#define FAIL            -1
+
+/**
+ * ROUTE service
+ */
+void ROUTE (TPSVCINFO *p_svc)
+{
+        int ret=SUCCEED;
+        double balance;
+
+        EXEC SQL BEGIN DECLARE SECTION;
+        char account[28+1];
+        EXEC SQL END DECLARE SECTION;
+
+        char date[15+1];
+        char message[100+1];
+        BFLDLEN len;
+
+        ndrx_inicfg_t *cfg;
+        ndrx_inicfg_section_keyval_t *out = NULL;
+        ndrx_inicfg_section_keyval_t *val;
+
+        if (NULL==(cfg=ndrx_inicfg_new()))
+        {
+            NDRX_LOG(log_error, "TESTERROR: failed to make inicfg: %s", Nstrerror(Nerror));
+            EXFAIL_OUT(ret);
+        }
+
+        if (EXSUCCEED!=ndrx_inicfg_add(cfg, "bank.ini", NULL))
+        {
+            NDRX_LOG(log_error, "TESTERROR: failed to make resource: %s", Nstrerror(Nerror));
+            EXFAIL_OUT(ret);        
+        }
+
+        if (EXSUCCEED!=ndrx_inicfg_get_subsect(cfg, NULL, "bank", &out))
+        {
+            NDRX_LOG(log_error, "TESTERROR: Failed to resolve [bank]: %s",
+                    Nstrerror(Nerror));
+            EXFAIL_OUT(ret);    
+        }
+
+        if (NULL==(val=ndrx_keyval_hash_get(out, "branchcode")))
+        {
+            NDRX_LOG(log_error, "TESTERROR: Failed to get branchcode!");
+            EXFAIL_OUT(ret);
+        }
+
+        UBFH *p_ub = (UBFH *)p_svc->data;
+
+        /* Resize the buffer to have some space in... */
+        if (NULL==(p_ub = (UBFH *)tprealloc ((char *)p_ub, 1024)))
+        {
+                fprintf(stderr, "Failed to realloc the UBF buffer - %s\n",
+                        tpstrerror(tperrno));
+                ret=FAIL;
+                goto out;
+        }
+
+        /* Read the account field */
+        len = sizeof(account);
+        if (SUCCEED!=Bget(p_ub, T_ACCNUM, 0, account, &len))
+        {
+                fprintf(stderr, "Failed to get T_ACCNUM[0]! -  %s\n",
+                        Bstrerror(Berror));
+                ret=FAIL;
+                goto out;
+        }
+
+        /* Read the date field */
+        len = sizeof(date);
+        if (SUCCEED!=Bget(p_ub, T_DATE, 0, date, &len))
+        {
+                fprintf(stderr, "Failed to get T_DATE[0]! -  %s\n",
+                        Bstrerror(Berror));
+                ret=FAIL;
+                goto out;
+        }
+
+        fprintf(stderr, "Got request for account: [%s] date [%s]\n",
+                        account, date);
+
+        /* Return the value in T_MESSAGE field */
+
+        EXEC SQL CONNECT TO mydb AS con1 USER user1;
+
+        EXEC SQL BEGIN DECLARE SECTION;
+        int branch;
+        EXEC SQL END DECLARE SECTION;
+
+        EXEC SQL SELECT branch_code INTO :branch FROM account WHERE account_number = :account;
+
+        fprintf(stderr, "Retruning val->val %ld\n", strtol(val->val,NULL,0));
+        fprintf(stderr, "Retruning branch %d\n", branch);
+
+        if (strtol(val->val,NULL,0) == branch)
+        {
+                tpforward("BALANCE", p_svc->data, 0, 0);
+        }
+
+        int n=sprintf (message, "Account not supported\n");
+
+        len = sizeof(message);
+        if (SUCCEED!=Bchg(p_ub, T_MESSAGE, 0, (char *)&message, len))
+        {
+                fprintf(stderr, "Failed to set T_MESSAGE! -  %s\n",
+                        Bstrerror(Berror));
+                ret=FAIL;
+                goto out;
+        }
+
+out:
+        tpreturn(  ret==SUCCEED?TPSUCCESS:TPFAIL,
+                0L,
+                (char *)p_ub,
+                0L,
+                0L);
+
+        EXEC SQL DISCONNECT con1;
+}
+
+/**
+ * Do initialization
+ */
+int tpsvrinit(int argc, char **argv)
+{
+        if (SUCCEED!=tpadvertise("ROUTE", ROUTE))
+        {
+                fprintf(stderr, "Failed to advertise ROUTE - %s\n",
+                        tpstrerror(tperrno));
+                return FAIL;
+        }
+
+        return SUCCEED;
+}
+
+/**
+ * Do de-initialization
+ */
+void tpsvrdone(void)
+{
+        fprintf(stderr, "tpsvrdone called\n");
+}

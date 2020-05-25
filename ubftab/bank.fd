@@ -1,0 +1,18 @@
+$/* -----------------------------------------------------------------------------
+$** Bank app field definitions for UBF buffer
+$** -----------------------------------------------------------------------------
+$*/
+
+$#ifndef __BANK_H
+$#define __BANK_H
+
+*base 1000
+
+#NAME           ID      TYPE    FLAG    COMMENT
+#----           --      ----    ----    -------
+# Service name for UD
+T_ACCNUM        1       string  -       Account number
+T_DATE          2       string  -       Date # UBF don't have date ??
+T_MESSAGE       3       string  -       Human readable message about request
+
+$#endif

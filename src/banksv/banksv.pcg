@@ -1,0 +1,117 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+
+/* Enduro/X includes: */
+#include <atmi.h>
+#include <ubf.h>
+#include <bank.fd.h>
+
+#define SUCCEED         0
+#define FAIL            -1
+
+/**
+ * BALANCE service
+ */
+void BALANCE (TPSVCINFO *p_svc)
+{
+        int ret=SUCCEED;        
+        
+        EXEC SQL BEGIN DECLARE SECTION;
+        char account[28+1];
+        char date[15+1];
+        EXEC SQL END DECLARE SECTION;
+        
+        char message[100+1];
+        BFLDLEN len;
+
+        UBFH *p_ub = (UBFH *)p_svc->data;
+
+        fprintf(stderr, "BALANCE got call\n");
+
+        /* Resize the buffer to have some space in... */
+        if (NULL==(p_ub = (UBFH *)tprealloc ((char *)p_ub, 1024)))
+        {
+                fprintf(stderr, "Failed to realloc the UBF buffer - %s\n",
+                        tpstrerror(tperrno));
+                ret=FAIL;
+                goto out;
+        }
+
+
+        /* Read the account field */
+        len = sizeof(account);
+        if (SUCCEED!=Bget(p_ub, T_ACCNUM, 0, account, &len))
+        {
+                fprintf(stderr, "Failed to get T_ACCNUM[0]! -  %s\n",
+                        Bstrerror(Berror));
+                ret=FAIL;
+                goto out;
+        }
+
+        /* Read the date field */
+        len = sizeof(date);
+        if (SUCCEED!=Bget(p_ub, T_DATE, 0, date, &len))
+        {
+                fprintf(stderr, "Failed to get T_DATE[0]! -  %s\n",
+                        Bstrerror(Berror));
+                ret=FAIL;
+                goto out;
+        }
+
+        fprintf(stderr, "Got request for account: [%s] date [%s]\n",
+                        account, date);
+
+        EXEC SQL CONNECT TO mydb AS con1 USER user1;
+
+        EXEC SQL BEGIN DECLARE SECTION;
+        double balance;
+        EXEC SQL END DECLARE SECTION;
+
+        EXEC SQL SELECT sum(balance.balance) INTO :balance FROM balance WHERE account_number = :account and data = :date;
+
+        fprintf(stderr, "Retruning balance %lf\n", balance);
+        int n=sprintf (message, "Retruning balance %lf\n", balance);
+
+        len = sizeof(message);
+        if (SUCCEED!=Bchg(p_ub, T_MESSAGE, 0, (char *)&message, len))
+        {
+                fprintf(stderr, "Failed to set T_MESSAGE! -  %s\n",
+                        Bstrerror(Berror));
+                ret=FAIL;
+                goto out;
+        }
+
+out:
+        tpreturn(  ret==SUCCEED?TPSUCCESS:TPFAIL,
+                0L,
+                (char *)p_ub,
+                0L,
+                0L);
+
+        EXEC SQL DISCONNECT con1;
+}
+
+/**
+ * Do initialization
+ */
+int tpsvrinit(int argc, char **argv)
+{
+        if (SUCCEED!=tpadvertise("BALANCE", BALANCE))
+        {
+                fprintf(stderr, "Failed to advertise BALANCE - %s\n",
+                        tpstrerror(tperrno));
+                return FAIL;
+        }
+
+        return SUCCEED;
+}
+
+/**
+ * Do de-initialization
+ */
+void tpsvrdone(void)
+{
+        fprintf(stderr, "tpsvrdone called\n");
+}
