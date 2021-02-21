@@ -1,12 +1,6 @@
 # learn_enduro
 my attempt to learn how enduro/x works
 
-disadvantages:
-1) CCONFSRV not used (not enough time). bank.ini loaded from run folder for now
-2) there is no docker for tests
-3) not all possible cases handled
-4) copy paste
-
 Provide ud files, test results, all configuration files, source code and compiled binaries.
 
 ud files: https://github.com/quazeeee/learn_enduro/tree/master/test
